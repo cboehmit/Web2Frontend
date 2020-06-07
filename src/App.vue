@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <navigation/>
+    <navigation />
 
     <div class="container">
       <router-view />
     </div>
 
-    <socialFooter/>
+    <socialFooter />
   </div>
 </template>
 
-<style scoped>
+<style lang="sass">
+  @import "bulma/sass/utilities/_all.sass"
+  @import "bulma/sass/grid/columns.sass"
 
+  body
+    font-family : 'Montserrat', sans-serif
+    padding: 0px
+    margin: 0px
 </style>
 
 <script>
